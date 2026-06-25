@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/nf-core/modules/master/subworkflows/yaml-schema.json
+name: "vidrl_umi_dedup"
+description: Align raw paired-end FastQ reads with UMI data, extract UMIs to SAM tags, and group reads by UMI similarity.
+keywords:
+  - alignment
+  - mapping
+  - bwa
+  - umi
+  - deduplication
+  - fgbio
+components:
+  - bwa/index
+  - fastp
+  - bwa/mem
+  - fgbio/extractumisfromreadstructure
+  - fgbio/groupreadsbyumi
+
+input:
+  - ch_fastq:
+      type: list
+      description: |
+        List containing sample metadata and paired-end FastQ files.
+        Structure: [ val(meta), [ path(read_1), path(read_2) ] ]
+      pattern: "*.{fastq,fq}.gz"
+  - ch_fasta:
+      type: list
+      description: |
+        List containing reference genome metadata and the FASTA file.
+        Structure: [ val(meta2), path(fasta) ]
+      pattern: "*.{fasta,fa,fna}"
+
+output:
+  - bam:
+      type: list
+      description: |
+        List containing sample metadata and the coordinate-sorted BAM file with reads grouped by UMI.
+        Structure: [ val(meta), path(bam) ]
+      pattern: "*.bam"
+  - metrics:
+      type: list
+      description: |
+        List containing sample metadata and the fgbio UMI family size histogram metrics file.
+        Structure: [ val(meta), path(histogram) ]
+      pattern: "*.txt"
+  - versions:
+      type: file
+      description: File containing the software versions of all tools used in the subworkflow.
+      pattern: "versions.yml"
+
+authors:
+  - "@abcdtree"
+maintainers:
+  - "@abcdtree"

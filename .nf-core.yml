@@ -8,7 +8,7 @@ template:
   org: nf-core
   name: umidedup
   description: VIDRL UMI DEDUPLICATION
-  author: '@abcdtree'
+  author: "@abcdtree"
   version: 1.0.0dev
   force: true
   outdir: .
