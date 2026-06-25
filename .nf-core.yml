@@ -1,0 +1,15 @@
+repository_type: pipeline
+
+nf_core_version: 4.0.2
+
+lint: {}
+
+template:
+  org: nf-core
+  name: umidedup
+  description: VIDRL UMI DEDUPLICATION
+  author: '@abcdtree'
+  version: 1.0.0dev
+  force: true
+  outdir: .
+  is_nfcore: true
