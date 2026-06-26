@@ -1,0 +1,49 @@
+{
+    "Should align paired-end reads and group by UMI": {
+        "content": [
+            {
+                "0": [
+                    [
+                        {
+                            "id": "test",
+                            "single_end": false
+                        },
+                        "test.deduped.bam:md5,48ae0bcdb3613f1a97c19e90429f71bf"
+                    ]
+                ],
+                "1": [
+                    [
+                        {
+                            "id": "test",
+                            "single_end": false
+                        },
+                        "test_umi-grouped_histogram.txt:md5,a91a191c265405d7833726bcb5dffa8a"
+                    ]
+                ],
+                "bam": [
+                    [
+                        {
+                            "id": "test",
+                            "single_end": false
+                        },
+                        "test.deduped.bam:md5,48ae0bcdb3613f1a97c19e90429f71bf"
+                    ]
+                ],
+                "metrics": [
+                    [
+                        {
+                            "id": "test",
+                            "single_end": false
+                        },
+                        "test_umi-grouped_histogram.txt:md5,a91a191c265405d7833726bcb5dffa8a"
+                    ]
+                ]
+            }
+        ],
+        "timestamp": "2026-06-26T15:40:28.00889736",
+        "meta": {
+            "nf-test": "0.9.5",
+            "nextflow": "26.04.4"
+        }
+    }
+}

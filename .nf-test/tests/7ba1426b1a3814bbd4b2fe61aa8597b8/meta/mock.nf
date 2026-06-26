@@ -24,14 +24,14 @@ workflow {
                 input[0] = Channel.of([
                     [ id: 'test', single_end: false ],
                     [
-                        file("/raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/../../../tests/fastq/test_R1.fastq.gz", checkIfExists: true),
-                        file("/raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/../../../tests/fastq/test_R2.fastq.gz", checkIfExists: true)
+                        file("/raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/tests/data/fastq/test_R1.fastq.gz", checkIfExists: true),
+                        file("/raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/tests/data/fastq/test_R2.fastq.gz", checkIfExists: true)
                     ]
                 ])
 
                 input[1] = Channel.of([
                     [ id: 'genome' ],
-                    file("/raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/../../../tests/ref/ref.fasta", checkIfExists: true)
+                    file("/raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/tests/data/ref/ref.fasta", checkIfExists: true)
                 ])
                 
     //----

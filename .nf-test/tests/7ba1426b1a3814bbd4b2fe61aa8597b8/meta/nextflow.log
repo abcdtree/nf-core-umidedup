@@ -1,188 +1,211 @@
-June-25 16:50:27.989 [main] DEBUG nextflow.cli.Launcher - $> nextflow -quiet -log /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/.nf-test/tests/7ba1426b1a3814bbd4b2fe61aa8597b8/meta/nextflow.log run /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/.nf-test-7ba1426b1a3814bbd4b2fe61aa8597b8.nf -c /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/nextflow.config -c /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/tests/nextflow.config -c /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/subworkflows/local/vidrl_umi_dedup/tests/./nextflow.config -params-file /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/.nf-test/tests/7ba1426b1a3814bbd4b2fe61aa8597b8/meta/params.json -ansi-log false -profile test -with-trace /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/.nf-test/tests/7ba1426b1a3814bbd4b2fe61aa8597b8/meta/trace.csv -w /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/.nf-test/tests/7ba1426b1a3814bbd4b2fe61aa8597b8/work
-June-25 16:50:28.065 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 26.04.4
-June-25 16:50:28.094 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/raid/VIDRL-USERS/HOME/jianshu/.nextflow/plugins; core-plugins: nf-amazon@3.9.2,nf-azure@1.22.6,nf-cloudcache@0.6.0,nf-codecommit@0.5.3,nf-console@1.3.0,nf-google@1.27.3,nf-k8s@1.5.4,nf-seqera@0.21.0,nf-tower@1.28.1,nf-wave@1.21.0
-June-25 16:50:28.128 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-June-25 16:50:28.129 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-June-25 16:50:28.133 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.14.1 in 'deployment' mode
-June-25 16:50:28.152 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
-June-25 16:50:28.297 [main] DEBUG nextflow.plugin.PluginUpdater - Using plugin repository: HttpPluginRepository [registry]; url=https://registry.nextflow.io/api
-June-25 16:50:28.304 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-June-25 16:50:28.344 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/nextflow.config
-June-25 16:50:28.348 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/nextflow.config
-June-25 16:50:28.349 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/tests/nextflow.config
-June-25 16:50:28.349 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/subworkflows/local/vidrl_umi_dedup/tests/./nextflow.config
-June-25 16:50:28.350 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/nextflow.config
-June-25 16:50:28.351 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/nextflow.config
-June-25 16:50:28.351 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/tests/nextflow.config
-June-25 16:50:28.352 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/subworkflows/local/vidrl_umi_dedup/tests/nextflow.config
-June-25 16:50:28.355 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
-June-25 16:50:28.376 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `test`
-June-25 16:50:30.084 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `test`
-June-25 16:50:30.506 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `test`
-June-25 16:50:30.513 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `test`
-June-25 16:50:30.526 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [debug, conda, mamba, docker, arm64, emulate_amd64, singularity, podman, shifter, charliecloud, apptainer, wave, gpu, test, test_full, abims, adcra, alice, alliance_canada, apollo, arcc, aws_tower, awsbatch, azurebatch, bi, bigpurple, bih, binac2, biohpc_gen, biowulf, bluebear, cambridge, cannon, cbe, ccga_dx, ccga_cau, ceci_dragon2, ceci_nic5, cedars, ceres, cfc, cfc_dev, cheaha, computerome, create, crg, crick, cropdiversityhpc, crukmi, csiro_petrichor, czbiohub_aws, daisybio, denbi_qbic, dkfz, dirac, ebc, eddie, ebi_codon, ebi_codon_slurm, einstein, embl_hd, engaging, ethz_euler, eva, eva_grace, fgcz, fred_hutch, fsu_draco, fub_curta, genotoul, genouest, giga, gis, googlebatch, hasta, hazel, hki_genie, hypatia, humantechnopole, icr_alma, icr_davros, ifb_core, imb, imperial, incliva, ipop_up, iris, janelia, jax, jex, unsw_katana, ku_sund_danhead, kaust, ki_luria, leicester, lovelace, lrz_cm4, lugh, m3c, maestro, mahuika, mana, marjorie, marvin, mccleary, mcw_rcc, medair, mjolnir_globe, mpcdf, mpcdf_viper, mssm, munin, nci_gadi, nu_genomics, nygc, nyu_hpc, oist, pasteur, pawsey_nimbus, pawsey_setonix, pdc_kth, phoenix, psmn, purdue_bell, purdue_gautschi, purdue_negishi, qmul_apocrita, rki, rosalind, rosalind_uge, roslin, sage, sahmri, sanger, ilifu, scw, seadragon, seattlechildrens, seawulf, seg_globe, self_hosted_runner, shu_bmrc, stjude, tes, tigem, tubingen_apg, tufts, tuos_stanage, ucd_sonic, ucl_cscluster, ucl_myriad, uct_hpc, uge, unc_lccc, unc_longleaf, unibe_ibu, unity, uod_hpc, uppmax, utd_juno, uw_hyak_pedslabs, uzh, uzl_omics, vai, vsc_calcua, vsc_kul_uhasselt, vsc_ugent, wehi, wustl_htcf, xanadu, york_viking]
-June-25 16:50:30.585 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins declared=[nf-schema@2.5.1]
-June-25 16:50:30.586 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-June-25 16:50:30.586 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[nf-schema@2.5.1]
-June-25 16:50:30.588 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-schema version: 2.5.1
-June-25 16:50:30.597 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-schema@2.5.1' resolved
-June-25 16:50:30.598 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-schema@2.5.1'
-June-25 16:50:30.605 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-schema@2.5.1
-June-25 16:50:30.611 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /raid/VIDRL-USERS/HOME/jianshu/.nextflow/secrets/store.json
-June-25 16:50:30.614 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@65d73bd] - activable => nextflow.secret.LocalSecretsProvider@65d73bd
-June-25 16:50:30.628 [main] INFO  nextflow.cli.CmdRun - Launching `/raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/.nf-test-7ba1426b1a3814bbd4b2fe61aa8597b8.nf` [maniac_brazil] - revision: 4167441931
-June-25 16:50:30.631 [main] ERROR org.pf4j.AbstractExtensionFinder - Different class loaders: 'org.pf4j.PluginClassLoader@76596288' (E) and 'jdk.internal.loader.ClassLoaders$AppClassLoader@764c12b6' (EP)
-June-25 16:50:30.658 [main] WARN  nextflow.config.ConfigValidator - Unrecognized config option 'docker.userEmulation'
-June-25 16:50:30.659 [main] WARN  nextflow.config.ConfigValidator - Unrecognized config option 'validation.defaultIgnoreParams'
-June-25 16:50:30.659 [main] WARN  nextflow.config.ConfigValidator - Unrecognized config option 'validation.monochromeLogs'
-June-25 16:50:30.708 [main] DEBUG nextflow.Session - Session UUID: 623c2d13-7599-40b6-ab11-eb2945e532a2
-June-25 16:50:30.708 [main] DEBUG nextflow.Session - Run name: maniac_brazil
-June-25 16:50:30.709 [main] DEBUG nextflow.Session - Executor pool size: 256
-June-25 16:50:30.716 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-June-25 16:50:30.721 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=768; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-June-25 16:50:30.741 [main] DEBUG nextflow.cli.CmdRun - 
+June-26 15:39:16.323 [main] DEBUG nextflow.cli.Launcher - $> nextflow -quiet -log /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/.nf-test/tests/7ba1426b1a3814bbd4b2fe61aa8597b8/meta/nextflow.log run /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/.nf-test-7ba1426b1a3814bbd4b2fe61aa8597b8.nf -c /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/nextflow.config -c /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/tests/nextflow.config -c /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/subworkflows/local/vidrl_umi_dedup/tests/./nextflow.config -params-file /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/.nf-test/tests/7ba1426b1a3814bbd4b2fe61aa8597b8/meta/params.json -ansi-log false -with-trace /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/.nf-test/tests/7ba1426b1a3814bbd4b2fe61aa8597b8/meta/trace.csv -w /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/.nf-test/tests/7ba1426b1a3814bbd4b2fe61aa8597b8/work -c /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/subworkflows/local/vidrl_umi_dedup/tests/nextflow.config
+June-26 15:39:16.402 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 26.04.4
+June-26 15:39:16.426 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/raid/VIDRL-USERS/HOME/jianshu/.nextflow/plugins; core-plugins: nf-amazon@3.9.2,nf-azure@1.22.6,nf-cloudcache@0.6.0,nf-codecommit@0.5.3,nf-console@1.3.0,nf-google@1.27.3,nf-k8s@1.5.4,nf-seqera@0.21.0,nf-tower@1.28.1,nf-wave@1.21.0
+June-26 15:39:16.456 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+June-26 15:39:16.457 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+June-26 15:39:16.460 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.14.1 in 'deployment' mode
+June-26 15:39:16.474 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+June-26 15:39:16.603 [main] DEBUG nextflow.plugin.PluginUpdater - Using plugin repository: HttpPluginRepository [registry]; url=https://registry.nextflow.io/api
+June-26 15:39:16.608 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+June-26 15:39:16.645 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/nextflow.config
+June-26 15:39:16.649 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/nextflow.config
+June-26 15:39:16.649 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/tests/nextflow.config
+June-26 15:39:16.649 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/subworkflows/local/vidrl_umi_dedup/tests/./nextflow.config
+June-26 15:39:16.650 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/subworkflows/local/vidrl_umi_dedup/tests/nextflow.config
+June-26 15:39:16.651 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/nextflow.config
+June-26 15:39:16.652 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/nextflow.config
+June-26 15:39:16.652 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/tests/nextflow.config
+June-26 15:39:16.652 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/subworkflows/local/vidrl_umi_dedup/tests/nextflow.config
+June-26 15:39:16.652 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/subworkflows/local/vidrl_umi_dedup/tests/nextflow.config
+June-26 15:39:16.656 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
+June-26 15:39:16.672 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+June-26 15:39:18.051 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+June-26 15:39:18.448 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+June-26 15:39:18.455 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+June-26 15:39:18.473 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+June-26 15:39:18.549 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins declared=[nf-schema@2.5.1]
+June-26 15:39:18.549 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+June-26 15:39:18.549 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[nf-schema@2.5.1]
+June-26 15:39:18.552 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-schema version: 2.5.1
+June-26 15:39:18.561 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-schema@2.5.1' resolved
+June-26 15:39:18.561 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-schema@2.5.1'
+June-26 15:39:18.568 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-schema@2.5.1
+June-26 15:39:18.575 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /raid/VIDRL-USERS/HOME/jianshu/.nextflow/secrets/store.json
+June-26 15:39:18.577 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@79ad1774] - activable => nextflow.secret.LocalSecretsProvider@79ad1774
+June-26 15:39:18.592 [main] INFO  nextflow.cli.CmdRun - Launching `/raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/.nf-test-7ba1426b1a3814bbd4b2fe61aa8597b8.nf` [compassionate_kimura] - revision: 9ff7587bf2
+June-26 15:39:18.594 [main] ERROR org.pf4j.AbstractExtensionFinder - Different class loaders: 'org.pf4j.PluginClassLoader@7e2bd5e6' (E) and 'jdk.internal.loader.ClassLoaders$AppClassLoader@764c12b6' (EP)
+June-26 15:39:18.623 [main] WARN  nextflow.config.ConfigValidator - Unrecognized config option 'validation.defaultIgnoreParams'
+June-26 15:39:18.623 [main] WARN  nextflow.config.ConfigValidator - Unrecognized config option 'validation.monochromeLogs'
+June-26 15:39:18.669 [main] DEBUG nextflow.Session - Session UUID: 725abebe-fa8d-43a7-ae2c-7444c6d455d6
+June-26 15:39:18.669 [main] DEBUG nextflow.Session - Run name: compassionate_kimura
+June-26 15:39:18.670 [main] DEBUG nextflow.Session - Executor pool size: 256
+June-26 15:39:18.677 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+June-26 15:39:18.681 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=768; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+June-26 15:39:18.699 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 26.04.4 build 12445
   Created: 17-06-2026 16:30 UTC (18-06-2026 02:30 AEDT)
   System: Linux 5.15.0-1101-nvidia
   Runtime: Groovy 4.0.31 on OpenJDK 64-Bit Server VM 23.0.2-internal-adhoc.conda.src
   Encoding: UTF-8 (UTF-8)
-  Process: 293127@dgx-a100 [127.0.1.1]
-  CPUs: 256 - Mem: 2 TB (5.6 GB) - Swap: 0 (0)
-June-25 16:50:30.764 [main] DEBUG nextflow.Session - Work-dir: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/.nf-test/tests/7ba1426b1a3814bbd4b2fe61aa8597b8/work [ext2/ext3]
-June-25 16:50:30.764 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/bin
-June-25 16:50:30.790 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-June-25 16:50:30.801 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
-June-25 16:50:30.803 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
-June-25 16:50:30.826 [main] DEBUG nextflow.Session - Observer factory (v2): ValidationObserverFactory
-June-25 16:50:30.836 [main] WARN  nextflow.container.DockerConfig - Config setting `docker.userEmulation` is not supported anymore
-June-25 16:50:30.849 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-June-25 16:50:30.858 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 257; maxThreads: 1000
-June-25 16:50:30.920 [main] DEBUG nextflow.Session - Session start
-June-25 16:50:30.927 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/.nf-test/tests/7ba1426b1a3814bbd4b2fe61aa8597b8/meta/trace.csv
-June-25 16:50:30.929 [main] DEBUG nextflow.script.ScriptLoaderFactory - Using script parser v2
-June-25 16:50:31.218 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
-June-25 16:50:31.230 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
-June-25 16:50:31.236 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
-June-25 16:50:31.803 [main] DEBUG nextflow.trace.TimelineObserver - Workflow completed -- rendering execution timeline
-June-25 16:50:31.860 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow completed -- saving trace file
-June-25 16:50:31.875 [main] ERROR nextflow.cli.Launcher - Script compilation failed
-nextflow.exception.ScriptCompilationException: Script compilation failed
-	at nextflow.script.parser.v2.ScriptLoaderV2.parse0(ScriptLoaderV2.groovy:129)
-	at nextflow.script.parser.v2.ScriptLoaderV2.parse(ScriptLoaderV2.groovy:81)
-	at nextflow.script.parser.v2.ScriptLoaderV2.parse(ScriptLoaderV2.groovy)
-	at nextflow.script.ScriptRunner.parseScript(ScriptRunner.groovy:215)
-	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:126)
-	at nextflow.cli.CmdRun.run(CmdRun.groovy:442)
-	at nextflow.cli.Launcher.run(Launcher.groovy:526)
-	at nextflow.cli.Launcher.main(Launcher.groovy:686)
-Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
-_nf_script_9d9bc3cc6a8f36d6: 7: Invalid include source: '/raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/subworkflows/modules/nf-core/fastp/main.nf' @ line 7, column 1.
-   include { FASTP     } from '../../modules/nf-core/fastp/main'
-   ^
-
-_nf_script_9d9bc3cc6a8f36d6: 8: Invalid include source: '/raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/subworkflows/modules/nf-core/bwa/mem/main.nf' @ line 8, column 1.
-   include { BWA_MEM   } from '../../modules/nf-core/bwa/mem/main'
-   ^
-
-_nf_script_9d9bc3cc6a8f36d6: 9: Invalid include source: '/raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/subworkflows/modules/nf-core/bwa/index/main.nf' @ line 9, column 1.
-   include { BWA_INDEX } from '../../modules/nf-core/bwa/index/main'
-   ^
-
-_nf_script_9d9bc3cc6a8f36d6: 10: Invalid include source: '/raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/subworkflows/modules/nf-core/fgbio/extractumisfromreadstructure/main.nf' @ line 10, column 1.
-   include { FGBIO_EXTRACTUMISFROMREADSTRUCTURE } from '../../modules/nf-core/fgbio/extractumisfromreadstructure/main'
-   ^
-
-_nf_script_9d9bc3cc6a8f36d6: 11: Invalid include source: '/raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/subworkflows/modules/nf-core/fgbio/groupreadsbyumi/main.nf' @ line 11, column 1.
-   include { FGBIO_GROUPREADSBYUMI            } from '../../modules/nf-core/fgbio/groupreadsbyumi/main'
-   ^
-
-_nf_script_9d9bc3cc6a8f36d6: 12: Invalid include source: '/raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/subworkflows/modules/nf-core/picard/markduplicates/main.nf' @ line 12, column 1.
-   include { PICARD_MARKDUPLICATES } from '../../modules/nf-core/picard/markduplicates/main'
-   ^
-
-_nf_script_9d9bc3cc6a8f36d6: 25: `BWA_INDEX` is not defined @ line 25, column 5.
-       BWA_INDEX ( ch_fasta )
-       ^
-
-_nf_script_9d9bc3cc6a8f36d6: 29: `FASTP` is not defined @ line 29, column 5.
-       FASTP ( ch_fastq, [], false, false )
-       ^
-
-_nf_script_9d9bc3cc6a8f36d6: 37: `BWA_MEM` is not defined @ line 37, column 5.
-       BWA_MEM (
-       ^
-
-_nf_script_9d9bc3cc6a8f36d6: 46: `FGBIO_EXTRACTUMISFROMREADSTRUCTURE` is not defined @ line 46, column 5.
-       FGBIO_EXTRACTUMISFROMREADSTRUCTURE ( BWA_MEM.out.bam )
-       ^
-
-_nf_script_9d9bc3cc6a8f36d6: 50: `FGBIO_GROUPREADSBYUMI` is not defined @ line 50, column 5.
-       FGBIO_GROUPREADSBYUMI ( FGBIO_EXTRACTUMISFROMREADSTRUCTURE.out.bam )
-       ^
-
-_nf_script_9d9bc3cc6a8f36d6: 54: `PICARD_MARKDUPLICATES` is not defined @ line 54, column 5.
-       PICARD_MARKDUPLICATES ( FGBIO_GROUPREADSBYUMI.out.bam, [[:],[]], [[:],[]] )
-       ^
-
-_nf_script_9d9bc3cc6a8f36d6: 26: `BWA_INDEX` is not defined @ line 26, column 35.
-       ch_versions = ch_versions.mix(BWA_INDEX.out.versions)
-                                     ^
-
-_nf_script_9d9bc3cc6a8f36d6: 30: `FASTP` is not defined @ line 30, column 35.
-       ch_versions = ch_versions.mix(FASTP.out.versions)
-                                     ^
-
-_nf_script_9d9bc3cc6a8f36d6: 34: `FASTP` is not defined @ line 34, column 17.
-       ch_bwa_in = FASTP.out.reads.combine(BWA_INDEX.out.index)
-                   ^
-
-_nf_script_9d9bc3cc6a8f36d6: 34: `BWA_INDEX` is not defined @ line 34, column 41.
-   _in = FASTP.out.reads.combine(BWA_INDEX.
-                                 ^
-
-_nf_script_9d9bc3cc6a8f36d6: 42: `BWA_MEM` is not defined @ line 42, column 35.
-       ch_versions = ch_versions.mix(BWA_MEM.out.versions)
-                                     ^
-
-_nf_script_9d9bc3cc6a8f36d6: 46: `BWA_MEM` is not defined @ line 46, column 42.
-   XTRACTUMISFROMREADSTRUCTURE ( BWA_MEM.ou
-                                 ^
-
-_nf_script_9d9bc3cc6a8f36d6: 47: `FGBIO_EXTRACTUMISFROMREADSTRUCTURE` is not defined @ line 47, column 35.
-       ch_versions = ch_versions.mix(FGBIO_EXTRACTUMISFROMREADSTRUCTURE.out.versions)
-                                     ^
-
-_nf_script_9d9bc3cc6a8f36d6: 50: `FGBIO_EXTRACTUMISFROMREADSTRUCTURE` is not defined @ line 50, column 29.
-       FGBIO_GROUPREADSBYUMI ( FGBIO_EXTRACTUMISFROMREADSTRUCTURE.out.bam )
-                               ^
-
-_nf_script_9d9bc3cc6a8f36d6: 51: `FGBIO_GROUPREADSBYUMI` is not defined @ line 51, column 35.
-       ch_versions = ch_versions.mix(FGBIO_GROUPREADSBYUMI.out.versions)
-                                     ^
-
-_nf_script_9d9bc3cc6a8f36d6: 54: `FGBIO_GROUPREADSBYUMI` is not defined @ line 54, column 29.
-       PICARD_MARKDUPLICATES ( FGBIO_GROUPREADSBYUMI.out.bam, [[:],[]], [[:],[]] )
-                               ^
-
-_nf_script_9d9bc3cc6a8f36d6: 55: `PICARD_MARKDUPLICATES` is not defined @ line 55, column 35.
-       ch_versions = ch_versions.mix(PICARD_MARKDUPLICATES.out.versions)
-                                     ^
-
-_nf_script_9d9bc3cc6a8f36d6: 59: `PICARD_MARKDUPLICATES` is not defined @ line 59, column 16.
-       bam      = PICARD_MARKDUPLICATES.out.bam      // Grouped BAM ready for deduplication
-                  ^
-
-_nf_script_9d9bc3cc6a8f36d6: 60: `FGBIO_GROUPREADSBYUMI` is not defined @ line 60, column 16.
-       metrics  = FGBIO_GROUPREADSBYUMI.out.histogram // UMI family size distribution metrics
-                  ^
-
-25 errors
-
-	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:292)
-	at org.codehaus.groovy.control.CompilationUnit$ISourceUnitOperation.doPhaseOperation(CompilationUnit.java:878)
-	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:660)
-	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:634)
-	at nextflow.script.parser.v2.ScriptCompiler.compile0(ScriptCompiler.java:146)
-	at nextflow.script.parser.v2.ScriptCompiler.compile(ScriptCompiler.java:112)
-	at nextflow.script.parser.v2.ScriptLoaderV2.parse0(ScriptLoaderV2.groovy:114)
-	... 7 common frames omitted
+  Process: 2522847@dgx-a100 [127.0.1.1]
+  CPUs: 256 - Mem: 2 TB (253.6 GB) - Swap: 0 (0)
+June-26 15:39:18.721 [main] DEBUG nextflow.Session - Work-dir: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/.nf-test/tests/7ba1426b1a3814bbd4b2fe61aa8597b8/work [ext2/ext3]
+June-26 15:39:18.721 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/bin
+June-26 15:39:18.746 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+June-26 15:39:18.757 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+June-26 15:39:18.759 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+June-26 15:39:18.784 [main] DEBUG nextflow.Session - Observer factory (v2): ValidationObserverFactory
+June-26 15:39:18.807 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+June-26 15:39:18.814 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 257; maxThreads: 1000
+June-26 15:39:18.911 [main] DEBUG nextflow.Session - Session start
+June-26 15:39:18.918 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/.nf-test/tests/7ba1426b1a3814bbd4b2fe61aa8597b8/meta/trace.csv
+June-26 15:39:18.920 [main] DEBUG nextflow.script.ScriptLoaderFactory - Using script parser v2
+June-26 15:39:19.924 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+June-26 15:39:20.154 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+June-26 15:39:20.155 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+June-26 15:39:20.163 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+June-26 15:39:20.170 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=256; memory=2 TB; capacity=256; pollInterval=100ms; dumpInterval=5m
+June-26 15:39:20.172 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+June-26 15:39:20.211 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'VIDRL_UMI_DEDUP:BWA_INDEX': maxForks=0; fair=false; array=0
+June-26 15:39:20.267 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name VIDRL_UMI_DEDUP:SAMTOOLS_FAIDX
+June-26 15:39:20.273 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+June-26 15:39:20.273 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+June-26 15:39:20.275 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'VIDRL_UMI_DEDUP:SAMTOOLS_FAIDX': maxForks=0; fair=false; array=0
+June-26 15:39:20.284 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name VIDRL_UMI_DEDUP:FASTP
+June-26 15:39:20.285 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:FASTP` matches process VIDRL_UMI_DEDUP:FASTP
+June-26 15:39:20.287 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+June-26 15:39:20.287 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+June-26 15:39:20.289 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'VIDRL_UMI_DEDUP:FASTP': maxForks=0; fair=false; array=0
+June-26 15:39:20.296 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_high` matches labels `process_high` for process with name VIDRL_UMI_DEDUP:BWA_MEM
+June-26 15:39:20.296 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:BWA_MEM` matches process VIDRL_UMI_DEDUP:BWA_MEM
+June-26 15:39:20.298 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+June-26 15:39:20.298 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+June-26 15:39:20.299 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'VIDRL_UMI_DEDUP:BWA_MEM': maxForks=0; fair=false; array=0
+June-26 15:39:20.304 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_low` matches labels `process_low` for process with name VIDRL_UMI_DEDUP:SAMTOOLS_INDEX
+June-26 15:39:20.306 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+June-26 15:39:20.306 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+June-26 15:39:20.307 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'VIDRL_UMI_DEDUP:SAMTOOLS_INDEX': maxForks=0; fair=false; array=0
+June-26 15:39:20.319 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_low` matches labels `process_low` for process with name VIDRL_UMI_DEDUP:FGBIO_COPYUMIFROMREADNAME
+June-26 15:39:20.320 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:FGBIO_COPYUMIFROMREADNAME` matches process VIDRL_UMI_DEDUP:FGBIO_COPYUMIFROMREADNAME
+June-26 15:39:20.322 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+June-26 15:39:20.322 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+June-26 15:39:20.324 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'VIDRL_UMI_DEDUP:FGBIO_COPYUMIFROMREADNAME': maxForks=0; fair=false; array=0
+June-26 15:39:20.329 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name VIDRL_UMI_DEDUP:SAMTOOLS_SORT_PRE_GROUP
+June-26 15:39:20.331 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+June-26 15:39:20.331 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+June-26 15:39:20.332 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'VIDRL_UMI_DEDUP:SAMTOOLS_SORT_PRE_GROUP': maxForks=0; fair=false; array=0
+June-26 15:39:20.337 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_low` matches labels `process_low` for process with name VIDRL_UMI_DEDUP:FGBIO_GROUPREADSBYUMI
+June-26 15:39:20.337 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:FGBIO_GROUPREADSBYUMI` matches process VIDRL_UMI_DEDUP:FGBIO_GROUPREADSBYUMI
+June-26 15:39:20.339 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+June-26 15:39:20.339 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+June-26 15:39:20.339 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'VIDRL_UMI_DEDUP:FGBIO_GROUPREADSBYUMI': maxForks=0; fair=false; array=0
+June-26 15:39:20.344 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name VIDRL_UMI_DEDUP:SAMTOOLS_SORT_POST_GROUP
+June-26 15:39:20.347 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+June-26 15:39:20.348 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+June-26 15:39:20.349 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'VIDRL_UMI_DEDUP:SAMTOOLS_SORT_POST_GROUP': maxForks=0; fair=false; array=0
+June-26 15:39:20.373 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name VIDRL_UMI_DEDUP:PICARD_MARKDUPLICATES
+June-26 15:39:20.374 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:PICARD_MARKDUPLICATES` matches process VIDRL_UMI_DEDUP:PICARD_MARKDUPLICATES
+June-26 15:39:20.376 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+June-26 15:39:20.376 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+June-26 15:39:20.377 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'VIDRL_UMI_DEDUP:PICARD_MARKDUPLICATES': maxForks=0; fair=false; array=0
+June-26 15:39:20.397 [main] DEBUG nextflow.Session - Config process names validation disabled as requested
+June-26 15:39:20.405 [main] DEBUG nextflow.Session - Igniting dataflow network (12)
+June-26 15:39:20.407 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > VIDRL_UMI_DEDUP:BWA_INDEX
+June-26 15:39:20.408 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > VIDRL_UMI_DEDUP:SAMTOOLS_FAIDX
+June-26 15:39:20.408 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > VIDRL_UMI_DEDUP:FASTP
+June-26 15:39:20.408 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > VIDRL_UMI_DEDUP:BWA_MEM
+June-26 15:39:20.408 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > VIDRL_UMI_DEDUP:SAMTOOLS_INDEX
+June-26 15:39:20.409 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > VIDRL_UMI_DEDUP:FGBIO_COPYUMIFROMREADNAME
+June-26 15:39:20.409 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > VIDRL_UMI_DEDUP:SAMTOOLS_SORT_PRE_GROUP
+June-26 15:39:20.409 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > VIDRL_UMI_DEDUP:FGBIO_GROUPREADSBYUMI
+June-26 15:39:20.410 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > VIDRL_UMI_DEDUP:SAMTOOLS_SORT_POST_GROUP
+June-26 15:39:20.410 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > VIDRL_UMI_DEDUP:PICARD_MARKDUPLICATES
+June-26 15:39:20.411 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  _nf_script_a9899bbe92dc9836: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/modules/nf-core/fgbio/groupreadsbyumi/main.nf
+  _nf_script_b90057ffc02e385d: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/modules/nf-core/picard/markduplicates/main.nf
+  _nf_script_e6c0b1933dd289f0: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/modules/nf-core/samtools/index/main.nf
+  _nf_script_2a47dc83f82436f6: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/modules/nf-core/samtools/sort/main.nf
+  _nf_script_f850b891f3e723af: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/modules/nf-core/bwa/index/main.nf
+  _nf_script_a0f964b6804415ea: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/modules/nf-core/fgbio/copyumifromreadname/main.nf
+  _nf_script_8e73736b355ff176: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/modules/nf-core/bwa/mem/main.nf
+  _nf_script_4174367ccc3cf39a: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/modules/nf-core/fastp/main.nf
+  Main: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/.nf-test-7ba1426b1a3814bbd4b2fe61aa8597b8.nf
+  _nf_script_9d9bc3cc6a8f36d6: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/subworkflows/local/vidrl_umi_dedup/main.nf
+  _nf_script_b9405899b6c4d66d: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/modules/nf-core/samtools/faidx/main.nf
+June-26 15:39:20.411 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+June-26 15:39:20.411 [main] DEBUG nextflow.Session - Session await
+June-26 15:39:20.573 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+June-26 15:39:20.576 [Task submitter] INFO  nextflow.Session - [ad/718003] Submitted process > VIDRL_UMI_DEDUP:BWA_INDEX (ref.fasta)
+June-26 15:39:20.590 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+June-26 15:39:20.591 [Task submitter] INFO  nextflow.Session - [70/d9a45b] Submitted process > VIDRL_UMI_DEDUP:FASTP (test)
+June-26 15:39:20.598 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+June-26 15:39:20.598 [Task submitter] INFO  nextflow.Session - [d1/c51fef] Submitted process > VIDRL_UMI_DEDUP:SAMTOOLS_FAIDX (ref.fasta)
+June-26 15:39:22.388 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: VIDRL_UMI_DEDUP:BWA_INDEX (ref.fasta); status: COMPLETED; exit: 0; error: -; workDir: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/.nf-test/tests/7ba1426b1a3814bbd4b2fe61aa8597b8/work/ad/718003bec68cf18f1ec6fc0d4dde8f]
+June-26 15:39:22.394 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=768; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+June-26 15:39:22.418 [TaskFinalizer-1] WARN  nextflow.processor.PublishDir - Process `VIDRL_UMI_DEDUP:BWA_INDEX` publishDir path contains a variable with a null value
+June-26 15:39:22.421 [TaskFinalizer-1] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=768; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+June-26 15:39:22.583 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: VIDRL_UMI_DEDUP:SAMTOOLS_FAIDX (ref.fasta); status: COMPLETED; exit: 0; error: -; workDir: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/.nf-test/tests/7ba1426b1a3814bbd4b2fe61aa8597b8/work/d1/c51fef0ea6d0e50fcf50ef93ddc506]
+June-26 15:39:22.774 [TaskFinalizer-2] DEBUG nextflow.processor.TaskProcessor - Process VIDRL_UMI_DEDUP:SAMTOOLS_FAIDX > Skipping output binding because one or more optional files are missing: fileoutparam<0:1>
+June-26 15:39:22.775 [TaskFinalizer-2] DEBUG nextflow.processor.TaskProcessor - Process VIDRL_UMI_DEDUP:SAMTOOLS_FAIDX > Skipping output binding because one or more optional files are missing: fileoutparam<1:1>
+June-26 15:39:22.776 [TaskFinalizer-2] DEBUG nextflow.processor.TaskProcessor - Process VIDRL_UMI_DEDUP:SAMTOOLS_FAIDX > Skipping output binding because one or more optional files are missing: fileoutparam<3:1>
+June-26 15:39:22.778 [TaskFinalizer-2] WARN  nextflow.processor.PublishDir - Process `VIDRL_UMI_DEDUP:SAMTOOLS_FAIDX` publishDir path contains a variable with a null value
+June-26 15:39:26.370 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: VIDRL_UMI_DEDUP:FASTP (test); status: COMPLETED; exit: 0; error: -; workDir: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/.nf-test/tests/7ba1426b1a3814bbd4b2fe61aa8597b8/work/70/d9a45b1961910d9b931c0b015ee1b9]
+June-26 15:39:26.382 [TaskFinalizer-3] DEBUG nextflow.processor.TaskProcessor - Process VIDRL_UMI_DEDUP:FASTP > Skipping output binding because one or more optional files are missing: fileoutparam<4:1>
+June-26 15:39:26.384 [TaskFinalizer-3] DEBUG nextflow.processor.TaskProcessor - Process VIDRL_UMI_DEDUP:FASTP > Skipping output binding because one or more optional files are missing: fileoutparam<5:1>
+June-26 15:39:26.385 [TaskFinalizer-3] WARN  nextflow.processor.PublishDir - Process `VIDRL_UMI_DEDUP:FASTP` publishDir path contains a variable with a null value
+June-26 15:39:26.407 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+June-26 15:39:26.408 [Task submitter] INFO  nextflow.Session - [d1/08f52b] Submitted process > VIDRL_UMI_DEDUP:BWA_MEM (test)
+June-26 15:39:32.730 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: VIDRL_UMI_DEDUP:BWA_MEM (test); status: COMPLETED; exit: 0; error: -; workDir: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/.nf-test/tests/7ba1426b1a3814bbd4b2fe61aa8597b8/work/d1/08f52bc270ed59c048592ee041976e]
+June-26 15:39:32.740 [TaskFinalizer-4] DEBUG nextflow.processor.TaskProcessor - Process VIDRL_UMI_DEDUP:BWA_MEM > Skipping output binding because one or more optional files are missing: fileoutparam<1:1>
+June-26 15:39:32.740 [TaskFinalizer-4] DEBUG nextflow.processor.TaskProcessor - Process VIDRL_UMI_DEDUP:BWA_MEM > Skipping output binding because one or more optional files are missing: fileoutparam<2:1>
+June-26 15:39:32.740 [TaskFinalizer-4] DEBUG nextflow.processor.TaskProcessor - Process VIDRL_UMI_DEDUP:BWA_MEM > Skipping output binding because one or more optional files are missing: fileoutparam<3:1>
+June-26 15:39:32.740 [TaskFinalizer-4] DEBUG nextflow.processor.TaskProcessor - Process VIDRL_UMI_DEDUP:BWA_MEM > Skipping output binding because one or more optional files are missing: fileoutparam<4:1>
+June-26 15:39:32.742 [TaskFinalizer-4] WARN  nextflow.processor.PublishDir - Process `VIDRL_UMI_DEDUP:BWA_MEM` publishDir path contains a variable with a null value
+June-26 15:39:32.756 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+June-26 15:39:32.756 [Task submitter] INFO  nextflow.Session - [f6/0f81c0] Submitted process > VIDRL_UMI_DEDUP:SAMTOOLS_INDEX (test)
+June-26 15:39:33.808 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: VIDRL_UMI_DEDUP:SAMTOOLS_INDEX (test); status: COMPLETED; exit: 0; error: -; workDir: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/.nf-test/tests/7ba1426b1a3814bbd4b2fe61aa8597b8/work/f6/0f81c0b46d09b79e7e4af8579c347f]
+June-26 15:39:33.813 [TaskFinalizer-5] WARN  nextflow.processor.PublishDir - Process `VIDRL_UMI_DEDUP:SAMTOOLS_INDEX` publishDir path contains a variable with a null value
+June-26 15:39:33.827 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+June-26 15:39:33.828 [Task submitter] INFO  nextflow.Session - [76/67afc2] Submitted process > VIDRL_UMI_DEDUP:FGBIO_COPYUMIFROMREADNAME (test)
+June-26 15:39:44.796 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: VIDRL_UMI_DEDUP:FGBIO_COPYUMIFROMREADNAME (test); status: COMPLETED; exit: 0; error: -; workDir: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/.nf-test/tests/7ba1426b1a3814bbd4b2fe61aa8597b8/work/76/67afc2efc43920720e1c417ecc24b3]
+June-26 15:39:44.802 [TaskFinalizer-6] WARN  nextflow.processor.PublishDir - Process `VIDRL_UMI_DEDUP:FGBIO_COPYUMIFROMREADNAME` publishDir path contains a variable with a null value
+June-26 15:39:44.821 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+June-26 15:39:44.821 [Task submitter] INFO  nextflow.Session - [c1/556485] Submitted process > VIDRL_UMI_DEDUP:SAMTOOLS_SORT_PRE_GROUP (test)
+June-26 15:39:46.794 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: VIDRL_UMI_DEDUP:SAMTOOLS_SORT_PRE_GROUP (test); status: COMPLETED; exit: 0; error: -; workDir: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/.nf-test/tests/7ba1426b1a3814bbd4b2fe61aa8597b8/work/c1/556485a32f4f73933fd58550a05e73]
+June-26 15:39:46.797 [TaskFinalizer-7] DEBUG n.processor.TaskFileCollector - Process `VIDRL_UMI_DEDUP:SAMTOOLS_SORT_PRE_GROUP (test)` is unable to find [UnixPath]: `/raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/.nf-test/tests/7ba1426b1a3814bbd4b2fe61aa8597b8/work/c1/556485a32f4f73933fd58550a05e73/test.cram` (pattern: `test.cram`)
+June-26 15:39:46.797 [TaskFinalizer-7] DEBUG n.processor.TaskFileCollector - Process `VIDRL_UMI_DEDUP:SAMTOOLS_SORT_PRE_GROUP (test)` is unable to find [UnixPath]: `/raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/.nf-test/tests/7ba1426b1a3814bbd4b2fe61aa8597b8/work/c1/556485a32f4f73933fd58550a05e73/test.sam` (pattern: `test.sam`)
+June-26 15:39:46.800 [TaskFinalizer-7] DEBUG nextflow.processor.TaskProcessor - Process VIDRL_UMI_DEDUP:SAMTOOLS_SORT_PRE_GROUP > Skipping output binding because one or more optional files are missing: fileoutparam<1:1>
+June-26 15:39:46.801 [TaskFinalizer-7] DEBUG nextflow.processor.TaskProcessor - Process VIDRL_UMI_DEDUP:SAMTOOLS_SORT_PRE_GROUP > Skipping output binding because one or more optional files are missing: fileoutparam<2:1>
+June-26 15:39:46.802 [TaskFinalizer-7] WARN  nextflow.processor.PublishDir - Process `VIDRL_UMI_DEDUP:SAMTOOLS_SORT_PRE_GROUP` publishDir path contains a variable with a null value
+June-26 15:39:46.815 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+June-26 15:39:46.816 [Task submitter] INFO  nextflow.Session - [5e/d84d53] Submitted process > VIDRL_UMI_DEDUP:FGBIO_GROUPREADSBYUMI (test)
+June-26 15:40:04.276 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: VIDRL_UMI_DEDUP:FGBIO_GROUPREADSBYUMI (test); status: COMPLETED; exit: 0; error: -; workDir: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/.nf-test/tests/7ba1426b1a3814bbd4b2fe61aa8597b8/work/5e/d84d53331bdd294f126d8c2d776138]
+June-26 15:40:04.284 [TaskFinalizer-8] WARN  nextflow.processor.PublishDir - Process `VIDRL_UMI_DEDUP:FGBIO_GROUPREADSBYUMI` publishDir path contains a variable with a null value
+June-26 15:40:04.298 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+June-26 15:40:04.298 [Task submitter] INFO  nextflow.Session - [23/bd4478] Submitted process > VIDRL_UMI_DEDUP:SAMTOOLS_SORT_POST_GROUP (test)
+June-26 15:40:06.215 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: VIDRL_UMI_DEDUP:SAMTOOLS_SORT_POST_GROUP (test); status: COMPLETED; exit: 0; error: -; workDir: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/.nf-test/tests/7ba1426b1a3814bbd4b2fe61aa8597b8/work/23/bd4478cb522b6ad233288dc61af199]
+June-26 15:40:06.218 [TaskFinalizer-9] DEBUG n.processor.TaskFileCollector - Process `VIDRL_UMI_DEDUP:SAMTOOLS_SORT_POST_GROUP (test)` is unable to find [UnixPath]: `/raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/.nf-test/tests/7ba1426b1a3814bbd4b2fe61aa8597b8/work/23/bd4478cb522b6ad233288dc61af199/test.cram` (pattern: `test.cram`)
+June-26 15:40:06.218 [TaskFinalizer-9] DEBUG n.processor.TaskFileCollector - Process `VIDRL_UMI_DEDUP:SAMTOOLS_SORT_POST_GROUP (test)` is unable to find [UnixPath]: `/raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/.nf-test/tests/7ba1426b1a3814bbd4b2fe61aa8597b8/work/23/bd4478cb522b6ad233288dc61af199/test.sam` (pattern: `test.sam`)
+June-26 15:40:06.221 [TaskFinalizer-9] DEBUG nextflow.processor.TaskProcessor - Process VIDRL_UMI_DEDUP:SAMTOOLS_SORT_POST_GROUP > Skipping output binding because one or more optional files are missing: fileoutparam<1:1>
+June-26 15:40:06.222 [TaskFinalizer-9] DEBUG nextflow.processor.TaskProcessor - Process VIDRL_UMI_DEDUP:SAMTOOLS_SORT_POST_GROUP > Skipping output binding because one or more optional files are missing: fileoutparam<2:1>
+June-26 15:40:06.223 [TaskFinalizer-9] WARN  nextflow.processor.PublishDir - Process `VIDRL_UMI_DEDUP:SAMTOOLS_SORT_POST_GROUP` publishDir path contains a variable with a null value
+June-26 15:40:06.236 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+June-26 15:40:06.236 [Task submitter] INFO  nextflow.Session - [90/96e293] Submitted process > VIDRL_UMI_DEDUP:PICARD_MARKDUPLICATES (test)
+June-26 15:40:26.833 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: VIDRL_UMI_DEDUP:PICARD_MARKDUPLICATES (test); status: COMPLETED; exit: 0; error: -; workDir: /raid/VIDRL-USERS/HOME/jianshu/nf-core-dev/nf-core-umidedup/.nf-test/tests/7ba1426b1a3814bbd4b2fe61aa8597b8/work/90/96e2931072ab3feb1f96ac435aafa1]
+June-26 15:40:26.841 [TaskFinalizer-10] DEBUG nextflow.processor.TaskProcessor - Process VIDRL_UMI_DEDUP:PICARD_MARKDUPLICATES > Skipping output binding because one or more optional files are missing: fileoutparam<1:1>
+June-26 15:40:26.841 [TaskFinalizer-10] DEBUG nextflow.processor.TaskProcessor - Process VIDRL_UMI_DEDUP:PICARD_MARKDUPLICATES > Skipping output binding because one or more optional files are missing: fileoutparam<2:1>
+June-26 15:40:26.842 [TaskFinalizer-10] WARN  nextflow.processor.PublishDir - Process `VIDRL_UMI_DEDUP:PICARD_MARKDUPLICATES` publishDir path contains a variable with a null value
+June-26 15:40:26.845 [main] DEBUG nextflow.Session - Session await > all processes finished
+June-26 15:40:26.934 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+June-26 15:40:26.934 [main] DEBUG nextflow.Session - Session await > all barriers passed
+June-26 15:40:26.936 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+June-26 15:40:26.937 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+June-26 15:40:26.947 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=10; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=4m 12s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=3; peakCpus=12; peakMemory=72 GB; ]
+June-26 15:40:26.967 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+June-26 15:40:27.459 [main] DEBUG nextflow.trace.TimelineObserver - Workflow completed -- rendering execution timeline
+June-26 15:40:27.524 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow completed -- saving trace file
+June-26 15:40:27.531 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+June-26 15:40:27.540 [main] INFO  org.pf4j.AbstractPluginManager - Stop plugin 'nf-schema@2.5.1'
+June-26 15:40:27.541 [main] DEBUG nextflow.plugin.BasePlugin - Plugin stopped nf-schema
+June-26 15:40:27.541 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+June-26 15:40:27.541 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

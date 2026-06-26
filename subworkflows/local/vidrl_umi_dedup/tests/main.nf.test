@@ -16,14 +16,14 @@ nextflow_workflow {
                 input[0] = Channel.of([
                     [ id: 'test', single_end: false ],
                     [
-                        file("${projectDir}/../../../tests/fastq/test_R1.fastq.gz", checkIfExists: true),
-                        file("${projectDir}/../../../tests/fastq/test_R2.fastq.gz", checkIfExists: true)
+                        file("${projectDir}/tests/data/fastq/test_R1.fastq.gz", checkIfExists: true),
+                        file("${projectDir}/tests/data/fastq/test_R2.fastq.gz", checkIfExists: true)
                     ]
                 ])
 
                 input[1] = Channel.of([
                     [ id: 'genome' ],
-                    file("${projectDir}/../../../tests/ref/ref.fasta", checkIfExists: true)
+                    file("${projectDir}/tests/data/ref/ref.fasta", checkIfExists: true)
                 ])
                 """
             }
